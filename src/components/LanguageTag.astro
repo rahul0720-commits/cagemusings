@@ -1,0 +1,43 @@
+---
+interface Props {
+	language: 'en' | 'hi'
+}
+
+const { language } = Astro.props
+const label = language === 'hi' ? 'Hindi' : 'English'
+---
+
+<span class:list={['language-tag', `language-tag--${language}`]}>{label}</span>
+
+<style>
+	.language-tag {
+		display: inline-block;
+		padding: 0.125rem 0.5rem;
+		border-radius: 3px;
+		font-size: 0.75rem;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		font-family: 'Inter Variable', system-ui, sans-serif;
+	}
+
+	.language-tag--en {
+		background: #e8f0e5;
+		color: #4a6741;
+	}
+
+	.language-tag--hi {
+		background: #f5ece0;
+		color: #8b4513;
+	}
+
+	:global(.dark) .language-tag--en {
+		background: #2d3a2a;
+		color: #a8c9a0;
+	}
+
+	:global(.dark) .language-tag--hi {
+		background: #3a2e1e;
+		color: #d4a574;
+	}
+</style>

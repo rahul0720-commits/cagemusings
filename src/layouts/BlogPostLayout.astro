@@ -1,0 +1,57 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import FormattedDate from '../components/FormattedDate.astro'
+import LanguageTag from '../components/LanguageTag.astro'
+
+type Props = CollectionEntry<'poems'>['data'] & {
+	slug: string
+}
+
+const {
+	title,
+	pubDate,
+	updatedDate,
+	language,
+	excerpt,
+} = Astro.props
+
+import BaseLayout from './BaseLayout.astro'
+---
+
+<BaseLayout title={title} description={excerpt || `A poem by Hemani Sehgal`}>
+	<main>
+		<article>
+			<div class="app-container flex justify-center py-24 relative">
+				<div class="w-full max-w-[640px]">
+					<div class="text-center pt-12">
+						<h1
+							class="text-4xl sm:text-5xl leading-snug font-normal"
+							lang={language}
+						>
+							{title}
+						</h1>
+						<div class="text-base flex items-center justify-center gap-4 flex-wrap py-6 opacity-70">
+							<span>
+								<FormattedDate date={pubDate} />
+							</span>
+							{
+								updatedDate && (
+									<span>
+										Updated <FormattedDate date={updatedDate} />
+									</span>
+								)
+							}
+							<LanguageTag language={language} />
+						</div>
+					</div>
+					<div
+						class="poem-body prose prose-neutral prose-lg md:prose-xl dark:prose-invert max-w-none"
+						lang={language}
+					>
+						<slot />
+					</div>
+				</div>
+			</div>
+		</article>
+	</main>
+</BaseLayout>

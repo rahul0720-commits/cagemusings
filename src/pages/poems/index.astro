@@ -1,0 +1,27 @@
+---
+import { getCollection } from 'astro:content'
+import BlogCard from '../../components/BlogCard.astro'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+
+const poems = (await getCollection('poems')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+)
+---
+
+<BaseLayout>
+	<main class="app-container pt-36 max-w-[640px] mx-auto">
+		<h1 class="text-5xl pb-4 font-normal">All Poems</h1>
+		<p class="text-lg leading-[2rem] opacity-70 italic">
+			A collection of verses in English and Hindi.
+		</p>
+	</main>
+	<section class="app-container max-w-[640px] mx-auto py-8 pb-16">
+		<div class="poems-grid-container">
+			{
+				poems.map((poem) => (
+					<BlogCard post={poem} />
+				))
+			}
+		</div>
+	</section>
+</BaseLayout>

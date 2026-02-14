@@ -1,0 +1,36 @@
+---
+import { SITE_BASE, WebsiteLinks } from '../consts'
+import { Icon } from 'astro-icon/components'
+
+const today = new Date()
+---
+
+<footer>
+	<div
+		class="max-w-[640px] mx-auto px-6 py-16 border-t border-foreground/10 dark:border-foreground-dark/10"
+	>
+		<div class="flex flex-wrap justify-center gap-6 mb-6">
+			{
+				WebsiteLinks.filter((link) => link.name !== 'Home').map((link) => (
+					<a
+						class="text-base opacity-70 hover:opacity-100 transition-opacity"
+						href={`${SITE_BASE}/${link.url}`}
+					>
+						{link.name}
+					</a>
+				))
+			}
+			<a
+				href={`${SITE_BASE}/rss.xml`}
+				rel="noopener noreferrer"
+				class="text-base opacity-70 hover:opacity-100 transition-opacity"
+				aria-label="RSS Feed"
+			>
+				<Icon name="mdi:rss" class="w-5 h-5" />
+			</a>
+		</div>
+		<p class="text-center text-sm opacity-50">
+			&copy; {today.getFullYear()} Cage Musings &middot; Hemani Sehgal
+		</p>
+	</div>
+</footer>

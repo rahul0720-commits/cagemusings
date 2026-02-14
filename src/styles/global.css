@@ -1,0 +1,79 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+	--font-sans: 'Inter Variable', sans-serif;
+	--font-mono: 'JetBrains Mono Variable', monospace;
+	--font-serif: 'Lora Variable', Georgia, 'Times New Roman', serif;
+
+	--color-foreground: #2c2416;
+	--color-foreground-dark: #f5ece0;
+	--color-background: #faf6f0;
+	--color-background-dark: #1a1510;
+	--color-primary: #8b4513;
+	--color-primary-dark: #d4a574;
+}
+
+html {
+	scroll-padding-top: 6.5rem;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-serif);
+}
+
+/* Hindi text uses Noto Serif Devanagari */
+[lang="hi"] {
+	font-family: 'Noto Serif Devanagari', Georgia, serif;
+	line-height: 2;
+}
+
+.app-container {
+	@apply container mx-auto px-6 sm:px-12 2xl:px-16;
+}
+
+#mobile-menu.mobile-nav-open {
+	@apply translate-x-0 shadow-xl/30;
+}
+
+.btn-primary {
+	@apply w-fit flex gap-2 bg-foreground text-background dark:bg-foreground-dark dark:text-background-dark px-5 py-3 md:px-4 md:py-2 rounded-lg items-center mt-4 hover:opacity-75 transition-opacity;
+}
+
+.btn-secondary {
+	@apply w-fit flex gap-2 bg-foreground/10 text-foreground dark:bg-foreground-dark/10 dark:text-foreground-dark px-5 py-3 md:px-4 md:py-2 rounded-lg items-center mt-4 hover:opacity-75 transition-opacity;
+}
+
+.section-title {
+	@apply text-4xl font-semibold pb-3;
+}
+
+.poems-grid-container {
+	@apply flex flex-col gap-0;
+}
+
+/* Poem feed card */
+.poem-card {
+	@apply py-8 border-b border-foreground/10 dark:border-foreground-dark/10;
+}
+
+.poem-card:last-child {
+	@apply border-b-0;
+}
+
+/* Poem body preserves line breaks */
+.poem-body {
+	white-space: pre-line;
+}
+
+.poem-body p {
+	margin-bottom: 1.5em;
+}
+
+/* Post content */
+.prose iframe {
+	@apply my-16 mx-auto w-11/12 aspect-video rounded-xl;
+}

@@ -2,7 +2,7 @@
 import NavbarLink from './NavbarLink.astro'
 import { Icon } from 'astro-icon/components'
 import ThemeSelector from './ThemeSelector.astro'
-import { SITE_BASE, WebsiteLinks } from '../consts'
+import { SITE_BASE, WebsiteLinks, SocialLinks } from '../consts'
 ---
 
 <header class="fixed top-0 w-full z-40 bg-background dark:bg-background-dark">
@@ -21,6 +21,19 @@ import { SITE_BASE, WebsiteLinks } from '../consts'
 						>
 							{link.name}
 						</NavbarLink>
+					))
+				}
+				{
+					SocialLinks.map((link) => (
+						<a
+							href={link.url}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="opacity-70 hover:opacity-100 transition-opacity"
+							aria-label={link.name}
+						>
+							<Icon name={`mdi:${link.name.toLowerCase()}`} size={22} />
+						</a>
 					))
 				}
 				<ThemeSelector />
@@ -58,6 +71,21 @@ import { SITE_BASE, WebsiteLinks } from '../consts'
 							</NavbarLink>
 						))
 					}
+					<div class="flex gap-6 mt-2">
+						{
+							SocialLinks.map((link) => (
+								<a
+									href={link.url}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="opacity-70 hover:opacity-100 transition-opacity"
+									aria-label={link.name}
+								>
+									<Icon name={`mdi:${link.name.toLowerCase()}`} size={28} />
+								</a>
+							))
+						}
+					</div>
 					<ThemeSelector class:list="mt-4" />
 				</div>
 			</div>

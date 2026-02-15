@@ -3,6 +3,7 @@ title: "A Runaway Train"
 pubDate: 2017-08-27
 language: en
 tags: ["death", "fear", "insanity", "irony", "life", "love", "nostalgia", "runaway", "story"]
+coverImage: ../../assets/poem-images/a-runaway-train.jpg
 ---
 
 My memory stops to fail me,

@@ -3,6 +3,7 @@ title: "My Forgetting, My Opiate, My Oblivion"
 pubDate: 2017-12-07
 language: en
 tags: ["death", "fear", "insanity", "irony", "life", "love", "sanity", "story"]
+coverImage: ../../assets/poem-images/my-forgetting-my-opiate-my-oblivion.jpg
 ---
 
 Shh...Don't call me, don't recall me,

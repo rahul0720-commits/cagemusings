@@ -3,6 +3,7 @@ title: "Song of the Second Childhood"
 pubDate: 2017-07-05
 language: en
 tags: ["aging", "angels", "aspirations", "compassion", "death", "destiny", "fate", "gratitude", "hatred", "heaven", "insanity", "irony", "life", "love", "nostalgia", "respect", "sanity", "story"]
+coverImage: ../../assets/poem-images/song-of-the-second-childhood.jpg
 ---
 
 We are the children of the Sun

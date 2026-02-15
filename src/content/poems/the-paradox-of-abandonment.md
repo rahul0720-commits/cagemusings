@@ -3,6 +3,7 @@ title: "The Paradox of Abandonment"
 pubDate: 2017-03-24
 language: en
 tags: ["angels", "expectations", "finding love", "gratitude", "hatred", "irony", "life", "loneliness", "love", "nostalgia", "story"]
+coverImage: ../../assets/poem-images/the-paradox-of-abandonment.jpg
 ---
 
 Of all things and feelings,

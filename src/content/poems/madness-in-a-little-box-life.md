@@ -3,6 +3,7 @@ title: "Madness In A Little Box- Life"
 pubDate: 2016-01-06
 language: en
 tags: ["life", "love", "heaven", "peace", "wisdom", "story"]
+coverImage: ../../assets/poem-images/madness-in-a-little-box-life.jpg
 ---
 
 The Madonna of pain, madness of a butterfly

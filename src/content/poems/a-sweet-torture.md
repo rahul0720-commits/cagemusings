@@ -3,6 +3,7 @@ title: "A Sweet Torture"
 pubDate: 2017-03-15
 language: en
 tags: ["aspirations", "compassion", "death", "destiny", "fate", "fear", "finding love", "irony", "life", "loneliness", "love", "nostalgia", "story"]
+coverImage: ../../assets/poem-images/a-sweet-torture.png
 ---
 
 Early frisking hours of dawn,

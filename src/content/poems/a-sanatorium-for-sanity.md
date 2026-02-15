@@ -3,6 +3,7 @@ title: "A Sanatorium for Sanity"
 pubDate: 2017-06-14
 language: en
 tags: ["aspirations", "compassion", "death", "fate", "gratitude", "insanity", "irony", "life", "loneliness", "love", "nostalgia", "respect", "sanity", "story"]
+coverImage: ../../assets/poem-images/a-sanatorium-for-sanity.jpg
 ---
 
 Somewhere lurking in the corner of my mind,

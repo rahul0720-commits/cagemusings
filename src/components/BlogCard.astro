@@ -2,6 +2,7 @@
 import { SITE_BASE } from '@/consts'
 import FormattedDate from './FormattedDate.astro'
 import LanguageTag from './LanguageTag.astro'
+import { Image } from 'astro:assets'
 
 const { post } = Astro.props
 ---
@@ -9,8 +10,15 @@ const { post } = Astro.props
 <article class="poem-card">
 	<a
 		href={`${SITE_BASE}/poems/${post.slug}/`}
-		class="group"
+		class="group block"
 	>
+		{post.data.coverImage && (
+			<Image
+				src={post.data.coverImage}
+				alt={post.data.title}
+				class="w-full rounded-lg mb-4 aspect-video object-cover"
+			/>
+		)}
 		<h4
 			class="text-2xl font-normal group-hover:text-primary dark:group-hover:text-primary-dark transition-colors"
 			lang={post.data.language}

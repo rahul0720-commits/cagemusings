@@ -3,6 +3,7 @@ title: "Greed & Joy"
 pubDate: 2016-02-18
 language: en
 tags: ["angels", "life", "love", "story"]
+coverImage: ../../assets/poem-images/greed-and-joy.jpg
 ---
 
 Falling prey to my cupidity

@@ -3,6 +3,7 @@ title: "The One Who Is Unsung"
 pubDate: 2016-04-19
 language: en
 tags: ["angels", "fear", "life", "respect", "story"]
+coverImage: ../../assets/poem-images/the-one-who-is-unsung.png
 ---
 
 The One shadow in the longest queue

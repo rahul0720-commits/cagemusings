@@ -3,6 +3,7 @@ title: "A Dreamer's Curse"
 pubDate: 2016-09-22
 language: en
 tags: ["finding love", "life", "nostalgia", "story"]
+coverImage: ../../assets/poem-images/a-dreamers-curse.jpg
 ---
 
 If you are a dreamer, come in,

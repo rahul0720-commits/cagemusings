@@ -3,6 +3,7 @@ title: "Oh Mother, Oh Mother! Cries Her Soul"
 pubDate: 2016-03-10
 language: en
 tags: ["angels", "fear", "heaven", "life", "love", "story"]
+coverImage: ../../assets/poem-images/oh-mother-oh-mother-cries-her-soul.jpg
 ---
 
 My mother was young and well-read,

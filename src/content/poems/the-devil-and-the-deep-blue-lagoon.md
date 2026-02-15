@@ -3,6 +3,7 @@ title: "The Devil and The Deep Blue Lagoon"
 pubDate: 2017-07-21
 language: en
 tags: ["aging", "angels", "compassion", "death", "insanity", "life", "love", "nostalgia", "story"]
+coverImage: ../../assets/poem-images/the-devil-and-the-deep-blue-lagoon.jpg
 ---
 
 I went down to the lake,

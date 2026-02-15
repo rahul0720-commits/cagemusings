@@ -5,14 +5,15 @@
 
 <section class="comments-section mt-16 pt-8 border-t border-foreground/10 dark:border-foreground-dark/10">
 	<h2 class="text-2xl font-normal mb-8">Comments</h2>
-	<script
-		src="https://utteranc.es/client.js"
-		repo="rahul0720-commits/cagemusings"
-		issue-term="pathname"
-		theme="preferred-color-scheme"
-		crossorigin="anonymous"
-		async
-	></script>
+	<div class="utterances-container">
+		<Fragment set:html={`<script src="https://utteranc.es/client.js"
+			repo="rahul0720-commits/cagemusings"
+			issue-term="pathname"
+			theme="preferred-color-scheme"
+			crossorigin="anonymous"
+			async>
+		</script>`} />
+	</div>
 </section>
 
 <style>

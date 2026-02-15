@@ -2,6 +2,7 @@
 import type { CollectionEntry } from 'astro:content'
 import FormattedDate from '../components/FormattedDate.astro'
 import LanguageTag from '../components/LanguageTag.astro'
+import Comments from '../components/Comments.astro'
 import { Image } from 'astro:assets'
 
 type Props = CollectionEntry<'poems'>['data'] & {
@@ -61,6 +62,7 @@ import BaseLayout from './BaseLayout.astro'
 					>
 						<slot />
 					</div>
+					<Comments />
 				</div>
 			</div>
 		</article>

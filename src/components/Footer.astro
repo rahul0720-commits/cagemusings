@@ -1,5 +1,5 @@
 ---
-import { SITE_BASE, WebsiteLinks } from '../consts'
+import { SITE_BASE, WebsiteLinks, SocialLinks } from '../consts'
 import { Icon } from 'astro-icon/components'
 
 const today = new Date()
@@ -17,6 +17,19 @@ const today = new Date()
 						href={`${SITE_BASE}/${link.url}`}
 					>
 						{link.name}
+					</a>
+				))
+			}
+			{
+				SocialLinks.map((link) => (
+					<a
+						href={link.url}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="text-base opacity-70 hover:opacity-100 transition-opacity"
+						aria-label={link.name}
+					>
+						<Icon name={`mdi:${link.name.toLowerCase()}`} class="w-5 h-5" />
 					</a>
 				))
 			}

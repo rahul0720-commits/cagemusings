@@ -4,7 +4,12 @@ export const SITE_DESCRIPTION =
 
 export const SITE_BASE = ''
 
-export const SocialLinks: { name: string; url: string }[] = []
+export const SocialLinks: { name: string; url: string }[] = [
+	{
+		name: 'Instagram',
+		url: 'https://www.instagram.com/bullshit_deflectors/',
+	},
+]
 
 export const WebsiteLinks = [
 	{

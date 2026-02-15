@@ -1,6 +1,6 @@
-export const SITE_TITLE = 'Cage Musings'
+export const SITE_TITLE = 'Pen Warrior at Peace'
 export const SITE_DESCRIPTION =
-	'Poetry in English & Hindi by Hemani Sehgal'
+	"'Courage' is the price life exacts for granting peace!"
 
 export const SITE_BASE = ''
 
